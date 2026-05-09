@@ -15,8 +15,8 @@ import seaborn as sns
 
 # ── make utils importable ──────────────────────────────────────────────────────
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "utils"))
-from predictor import load_artefacts, predict
-
+sys.path.insert(0, os.path.dirname(__file__))
+from utils.predictor import load_artefacts, predict
 # ── page config ────────────────────────────────────────────────────────────────
 st.set_page_config(
     page_title="Disease Prediction System",
